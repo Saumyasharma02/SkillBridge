@@ -1,0 +1,168 @@
+2025-02-26 15:41:10,947 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 15:41:10,947 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 15:41:10,949 - INFO -  * Restarting with stat
+2025-02-26 15:41:13,044 - WARNING -  * Debugger is active!
+2025-02-26 15:41:13,045 - INFO -  * Debugger PIN: 376-791-452
+2025-02-26 15:42:28,923 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 15:42:28,923 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 15:42:28,925 - INFO -  * Restarting with stat
+2025-02-26 15:42:31,000 - WARNING -  * Debugger is active!
+2025-02-26 15:42:31,001 - INFO -  * Debugger PIN: 376-791-452
+2025-02-26 15:42:53,029 - INFO - 127.0.0.1 - - [26/Feb/2025 15:42:53] "GET / HTTP/1.1" 200 -
+2025-02-26 15:43:20,796 - INFO - 127.0.0.1 - - [26/Feb/2025 15:43:20] "GET /upload HTTP/1.1" 200 -
+2025-02-26 15:43:24,043 - INFO - 127.0.0.1 - - [26/Feb/2025 15:43:24] "GET /fetch HTTP/1.1" 200 -
+2025-02-26 15:43:26,129 - INFO - 127.0.0.1 - - [26/Feb/2025 15:43:26] "GET /resumes HTTP/1.1" 200 -
+2025-02-26 15:43:27,020 - INFO - 127.0.0.1 - - [26/Feb/2025 15:43:27] "GET /resumes HTTP/1.1" 200 -
+2025-02-26 15:43:30,172 - INFO - 127.0.0.1 - - [26/Feb/2025 15:43:30] "GET / HTTP/1.1" 200 -
+2025-02-26 15:43:39,639 - INFO - 127.0.0.1 - - [26/Feb/2025 15:43:39] "GET /match HTTP/1.1" 200 -
+2025-02-26 15:59:33,960 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 15:59:33,962 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 15:59:33,964 - INFO -  * Restarting with stat
+2025-02-26 15:59:37,318 - WARNING -  * Debugger is active!
+2025-02-26 15:59:37,319 - INFO -  * Debugger PIN: 376-791-452
+2025-02-26 15:59:43,533 - INFO - 127.0.0.1 - - [26/Feb/2025 15:59:43] "GET / HTTP/1.1" 200 -
+2025-02-26 15:59:43,673 - INFO - 127.0.0.1 - - [26/Feb/2025 15:59:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-26 15:59:46,471 - INFO - 127.0.0.1 - - [26/Feb/2025 15:59:46] "GET /upload HTTP/1.1" 200 -
+2025-02-26 16:00:11,428 - INFO - 127.0.0.1 - - [26/Feb/2025 16:00:11] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-26 16:00:11,439 - INFO - 127.0.0.1 - - [26/Feb/2025 16:00:11] "GET /upload HTTP/1.1" 200 -
+2025-02-26 16:00:16,360 - INFO - 127.0.0.1 - - [26/Feb/2025 16:00:16] "GET / HTTP/1.1" 200 -
+2025-02-26 16:00:20,886 - INFO - 127.0.0.1 - - [26/Feb/2025 16:00:20] "GET /fetch HTTP/1.1" 200 -
+2025-02-26 16:00:22,114 - INFO - 127.0.0.1 - - [26/Feb/2025 16:00:22] "GET /resumes HTTP/1.1" 200 -
+2025-02-26 16:05:07,212 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 16:05:07,212 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 16:05:07,214 - INFO -  * Restarting with stat
+2025-02-26 16:05:11,027 - WARNING -  * Debugger is active!
+2025-02-26 16:05:11,030 - INFO -  * Debugger PIN: 376-791-452
+2025-02-26 16:05:13,029 - INFO - 127.0.0.1 - - [26/Feb/2025 16:05:13] "GET / HTTP/1.1" 200 -
+2025-02-26 16:05:16,393 - INFO - 127.0.0.1 - - [26/Feb/2025 16:05:16] "GET /upload HTTP/1.1" 200 -
+2025-02-26 16:05:28,246 - INFO - 127.0.0.1 - - [26/Feb/2025 16:05:28] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-26 16:05:28,259 - INFO - 127.0.0.1 - - [26/Feb/2025 16:05:28] "GET /upload HTTP/1.1" 200 -
+2025-02-26 16:05:30,220 - INFO - 127.0.0.1 - - [26/Feb/2025 16:05:30] "GET / HTTP/1.1" 200 -
+2025-02-26 16:05:33,622 - INFO - 127.0.0.1 - - [26/Feb/2025 16:05:33] "GET /fetch HTTP/1.1" 200 -
+2025-02-26 16:05:34,801 - INFO - 127.0.0.1 - - [26/Feb/2025 16:05:34] "GET /resumes HTTP/1.1" 200 -
+2025-02-26 16:07:54,978 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-26 16:07:54,978 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 16:07:54,979 - INFO -  * Restarting with stat
+2025-02-26 16:07:58,636 - WARNING -  * Debugger is active!
+2025-02-26 16:07:58,637 - INFO -  * Debugger PIN: 376-791-452
+2025-02-26 16:07:59,629 - INFO - 127.0.0.1 - - [26/Feb/2025 16:07:59] "GET / HTTP/1.1" 200 -
+2025-02-26 16:08:11,242 - INFO - 127.0.0.1 - - [26/Feb/2025 16:08:11] "GET /upload HTTP/1.1" 200 -
+2025-02-26 16:08:22,653 - INFO - 127.0.0.1 - - [26/Feb/2025 16:08:22] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-02-26 16:08:22,668 - INFO - 127.0.0.1 - - [26/Feb/2025 16:08:22] "GET /upload HTTP/1.1" 200 -
+2025-02-26 16:08:25,898 - INFO - 127.0.0.1 - - [26/Feb/2025 16:08:25] "GET / HTTP/1.1" 200 -
+2025-02-26 16:08:29,423 - INFO - 127.0.0.1 - - [26/Feb/2025 16:08:29] "GET /fetch HTTP/1.1" 200 -
+2025-02-26 16:08:31,072 - INFO - 127.0.0.1 - - [26/Feb/2025 16:08:31] "GET /resumes HTTP/1.1" 200 -
+2025-02-26 16:34:22,527 - INFO - loading projection weights from GoogleNews-vectors-negative300.bin
+2025-02-26 16:34:52,323 - INFO - loading projection weights from GoogleNews-vectors-negative300.bin
+2025-04-02 21:20:24,813 - INFO - loading projection weights from GoogleNews-vectors-negative300.bin
+2025-04-02 21:23:37,186 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-02 21:23:37,186 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 21:23:37,187 - INFO -  * Restarting with stat
+2025-04-02 21:23:41,414 - WARNING -  * Debugger is active!
+2025-04-02 21:23:41,420 - INFO -  * Debugger PIN: 314-348-354
+2025-04-02 21:23:47,185 - INFO - 127.0.0.1 - - [02/Apr/2025 21:23:47] "GET / HTTP/1.1" 200 -
+2025-04-02 21:23:47,636 - INFO - 127.0.0.1 - - [02/Apr/2025 21:23:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-02 21:23:50,925 - INFO - 127.0.0.1 - - [02/Apr/2025 21:23:50] "GET /upload HTTP/1.1" 200 -
+2025-04-02 21:24:04,264 - INFO - 127.0.0.1 - - [02/Apr/2025 21:24:04] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-02 21:24:04,277 - INFO - 127.0.0.1 - - [02/Apr/2025 21:24:04] "GET /upload HTTP/1.1" 200 -
+2025-04-02 21:24:06,069 - INFO - 127.0.0.1 - - [02/Apr/2025 21:24:06] "GET / HTTP/1.1" 200 -
+2025-04-02 21:24:12,819 - INFO - 127.0.0.1 - - [02/Apr/2025 21:24:12] "GET /fetch HTTP/1.1" 200 -
+2025-04-02 21:24:14,487 - INFO - 127.0.0.1 - - [02/Apr/2025 21:24:14] "GET /resumes HTTP/1.1" 200 -
+2025-04-02 21:33:24,843 - INFO - loading projection weights from C:\Users\hp\PycharmProjects\PythonProject\models\GoogleNews-vectors-negative300.bin
+2025-04-02 21:33:47,711 - INFO - KeyedVectors lifecycle event {'msg': 'loaded (3000000, 300) matrix of type float32 from C:\\Users\\hp\\PycharmProjects\\PythonProject\\models\\GoogleNews-vectors-negative300.bin', 'binary': True, 'encoding': 'utf8', 'datetime': '2025-04-02T21:33:47.446198', 'gensim': '4.3.3', 'python': '3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-11-10.0.26100-SP0', 'event': 'load_word2vec_format'}
+2025-04-02 21:33:47,997 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-02 21:33:47,997 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 21:33:48,007 - INFO -  * Restarting with stat
+2025-04-02 21:33:55,902 - INFO - loading projection weights from C:\Users\hp\PycharmProjects\PythonProject\models\GoogleNews-vectors-negative300.bin
+2025-04-02 21:34:24,658 - INFO - KeyedVectors lifecycle event {'msg': 'loaded (3000000, 300) matrix of type float32 from C:\\Users\\hp\\PycharmProjects\\PythonProject\\models\\GoogleNews-vectors-negative300.bin', 'binary': True, 'encoding': 'utf8', 'datetime': '2025-04-02T21:34:24.356986', 'gensim': '4.3.3', 'python': '3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-11-10.0.26100-SP0', 'event': 'load_word2vec_format'}
+2025-04-02 21:34:24,927 - WARNING -  * Debugger is active!
+2025-04-02 21:34:24,947 - INFO -  * Debugger PIN: 314-348-354
+2025-04-02 21:35:10,374 - INFO - 127.0.0.1 - - [02/Apr/2025 21:35:10] "GET / HTTP/1.1" 200 -
+2025-04-02 21:35:14,230 - INFO - 127.0.0.1 - - [02/Apr/2025 21:35:14] "GET /match HTTP/1.1" 200 -
+2025-04-02 21:36:55,351 - INFO - 127.0.0.1 - - [02/Apr/2025 21:36:55] "POST /match_resumes HTTP/1.1" 200 -
+2025-04-02 21:45:36,831 - INFO - Creating C:\Users\hp/gensim-data
+2025-04-02 21:47:50,395 - INFO - loading projection weights from C:\Users\hp\PycharmProjects\PythonProject\models\GoogleNews-vectors-negative300.bin
+2025-04-02 21:48:14,198 - INFO - KeyedVectors lifecycle event {'msg': 'loaded (3000000, 300) matrix of type float32 from C:\\Users\\hp\\PycharmProjects\\PythonProject\\models\\GoogleNews-vectors-negative300.bin', 'binary': True, 'encoding': 'utf8', 'datetime': '2025-04-02T21:48:14.060015', 'gensim': '4.3.3', 'python': '3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-11-10.0.26100-SP0', 'event': 'load_word2vec_format'}
+2025-04-02 21:48:14,304 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-02 21:48:14,304 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 21:48:14,308 - INFO -  * Restarting with stat
+2025-04-02 21:48:23,235 - INFO - loading projection weights from C:\Users\hp\PycharmProjects\PythonProject\models\GoogleNews-vectors-negative300.bin
+2025-04-02 21:48:55,769 - INFO - KeyedVectors lifecycle event {'msg': 'loaded (3000000, 300) matrix of type float32 from C:\\Users\\hp\\PycharmProjects\\PythonProject\\models\\GoogleNews-vectors-negative300.bin', 'binary': True, 'encoding': 'utf8', 'datetime': '2025-04-02T21:48:55.445902', 'gensim': '4.3.3', 'python': '3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-11-10.0.26100-SP0', 'event': 'load_word2vec_format'}
+2025-04-02 21:48:56,284 - WARNING -  * Debugger is active!
+2025-04-02 21:48:56,330 - INFO -  * Debugger PIN: 314-348-354
+2025-04-02 21:48:57,218 - INFO - 127.0.0.1 - - [02/Apr/2025 21:48:57] "GET / HTTP/1.1" 200 -
+2025-04-02 21:50:28,820 - INFO - 127.0.0.1 - - [02/Apr/2025 21:50:28] "GET /upload HTTP/1.1" 200 -
+2025-04-02 21:50:42,145 - INFO - 127.0.0.1 - - [02/Apr/2025 21:50:42] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-02 21:50:42,159 - INFO - 127.0.0.1 - - [02/Apr/2025 21:50:42] "GET /upload HTTP/1.1" 200 -
+2025-04-02 21:50:50,209 - INFO - 127.0.0.1 - - [02/Apr/2025 21:50:50] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-02 21:50:50,222 - INFO - 127.0.0.1 - - [02/Apr/2025 21:50:50] "GET /upload HTTP/1.1" 200 -
+2025-04-02 21:50:55,959 - INFO - 127.0.0.1 - - [02/Apr/2025 21:50:55] "GET /fetch HTTP/1.1" 200 -
+2025-04-02 21:50:57,597 - INFO - 127.0.0.1 - - [02/Apr/2025 21:50:57] "GET /resumes HTTP/1.1" 200 -
+2025-04-02 21:51:11,563 - INFO - 127.0.0.1 - - [02/Apr/2025 21:51:11] "GET / HTTP/1.1" 200 -
+2025-04-02 21:51:15,165 - INFO - 127.0.0.1 - - [02/Apr/2025 21:51:15] "GET /match HTTP/1.1" 200 -
+2025-04-02 21:52:07,912 - INFO - 127.0.0.1 - - [02/Apr/2025 21:52:07] "POST /match_resumes HTTP/1.1" 200 -
+2025-04-02 21:52:47,886 - INFO - 127.0.0.1 - - [02/Apr/2025 21:52:47] "POST /match_resumes HTTP/1.1" 200 -
+2025-04-02 21:59:10,484 - INFO - loading projection weights from C:\Users\hp\PycharmProjects\PythonProject\models\GoogleNews-vectors-negative300.bin
+2025-04-02 21:59:35,614 - INFO - KeyedVectors lifecycle event {'msg': 'loaded (3000000, 300) matrix of type float32 from C:\\Users\\hp\\PycharmProjects\\PythonProject\\models\\GoogleNews-vectors-negative300.bin', 'binary': True, 'encoding': 'utf8', 'datetime': '2025-04-02T21:59:35.320903', 'gensim': '4.3.3', 'python': '3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-11-10.0.26100-SP0', 'event': 'load_word2vec_format'}
+2025-04-02 21:59:35,824 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-02 21:59:35,825 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 21:59:35,829 - INFO -  * Restarting with stat
+2025-04-02 21:59:45,106 - INFO - loading projection weights from C:\Users\hp\PycharmProjects\PythonProject\models\GoogleNews-vectors-negative300.bin
+2025-04-02 22:00:20,743 - INFO - KeyedVectors lifecycle event {'msg': 'loaded (3000000, 300) matrix of type float32 from C:\\Users\\hp\\PycharmProjects\\PythonProject\\models\\GoogleNews-vectors-negative300.bin', 'binary': True, 'encoding': 'utf8', 'datetime': '2025-04-02T22:00:20.487577', 'gensim': '4.3.3', 'python': '3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-11-10.0.26100-SP0', 'event': 'load_word2vec_format'}
+2025-04-02 22:00:21,033 - WARNING -  * Debugger is active!
+2025-04-02 22:00:21,063 - INFO -  * Debugger PIN: 314-348-354
+2025-04-02 22:00:21,726 - INFO - 127.0.0.1 - - [02/Apr/2025 22:00:21] "GET /match HTTP/1.1" 200 -
+2025-04-02 22:01:31,006 - INFO - 127.0.0.1 - - [02/Apr/2025 22:01:31] "POST /match_resumes HTTP/1.1" 200 -
+2025-04-02 22:39:19,326 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-02 22:39:19,327 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 22:39:19,330 - INFO -  * Restarting with stat
+2025-04-02 22:39:23,767 - WARNING -  * Debugger is active!
+2025-04-02 22:39:23,772 - INFO -  * Debugger PIN: 314-348-354
+2025-04-02 22:39:34,279 - INFO - 127.0.0.1 - - [02/Apr/2025 22:39:34] "GET /match HTTP/1.1" 200 -
+2025-04-02 22:39:37,896 - INFO - 127.0.0.1 - - [02/Apr/2025 22:39:37] "POST /match_resumes HTTP/1.1" 200 -
+2025-04-02 22:39:49,517 - INFO - 127.0.0.1 - - [02/Apr/2025 22:39:49] "POST /match_resumes HTTP/1.1" 200 -
+2025-04-02 22:40:08,105 - INFO - 127.0.0.1 - - [02/Apr/2025 22:40:08] "POST /match_resumes HTTP/1.1" 200 -
+2025-04-02 22:48:00,201 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-02 22:48:00,201 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 22:48:00,202 - INFO -  * Restarting with stat
+2025-04-02 22:48:04,982 - WARNING -  * Debugger is active!
+2025-04-02 22:48:04,984 - INFO -  * Debugger PIN: 314-348-354
+2025-04-02 22:48:05,392 - INFO - 127.0.0.1 - - [02/Apr/2025 22:48:05] "GET /match HTTP/1.1" 200 -
+2025-04-02 22:48:09,982 - INFO - 127.0.0.1 - - [02/Apr/2025 22:48:09] "POST /match_resumes HTTP/1.1" 200 -
+2025-04-02 22:48:37,654 - INFO - 127.0.0.1 - - [02/Apr/2025 22:48:37] "POST /match_resumes HTTP/1.1" 200 -
+2025-04-02 22:51:44,768 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-02 22:51:44,768 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 22:51:44,769 - INFO -  * Restarting with stat
+2025-04-02 22:51:49,567 - WARNING -  * Debugger is active!
+2025-04-02 22:51:49,569 - INFO -  * Debugger PIN: 314-348-354
+2025-04-02 22:51:49,654 - INFO - 127.0.0.1 - - [02/Apr/2025 22:51:49] "POST /match_resumes HTTP/1.1" 200 -
+2025-04-02 22:53:34,656 - INFO - 127.0.0.1 - - [02/Apr/2025 22:53:34] "GET /match HTTP/1.1" 200 -
+2025-04-02 22:54:40,420 - INFO -  * Detected change in 'C:\\Users\\hp\\PycharmProjects\\PythonProject\\job_matching.py', reloading
+2025-04-02 22:54:42,879 - INFO -  * Restarting with stat
+2025-04-02 22:54:47,858 - WARNING -  * Debugger is active!
+2025-04-02 22:54:47,860 - INFO -  * Debugger PIN: 314-348-354
+2025-04-02 22:54:47,919 - INFO - 127.0.0.1 - - [02/Apr/2025 22:54:47] "GET /match HTTP/1.1" 200 -
+2025-04-02 22:55:13,599 - INFO - 127.0.0.1 - - [02/Apr/2025 22:55:13] "POST /match_resumes HTTP/1.1" 200 -
+2025-04-02 22:55:37,541 - INFO - 127.0.0.1 - - [02/Apr/2025 22:55:37] "POST /match_resumes HTTP/1.1" 200 -
+2025-04-02 22:56:25,541 - INFO - 127.0.0.1 - - [02/Apr/2025 22:56:25] "POST /match_resumes HTTP/1.1" 200 -
+2025-04-02 23:10:37,397 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-02 23:10:37,398 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 23:10:37,407 - INFO -  * Restarting with stat
+2025-04-02 23:10:52,040 - WARNING -  * Debugger is active!
+2025-04-02 23:10:52,044 - INFO -  * Debugger PIN: 314-348-354
+2025-04-02 23:11:47,719 - INFO - 127.0.0.1 - - [02/Apr/2025 23:11:47] "GET /match HTTP/1.1" 200 -
+2025-04-02 23:11:56,904 - INFO - 127.0.0.1 - - [02/Apr/2025 23:11:56] "POST /match_resumes HTTP/1.1" 200 -
+2025-04-02 23:12:06,166 - INFO - 127.0.0.1 - - [02/Apr/2025 23:12:06] "POST /match_resumes HTTP/1.1" 200 -

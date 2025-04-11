@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Jobs</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a0b2e, #2d0e5e);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        textarea {
+            width: 80%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 16px;
+            margin-bottom: 20px;
+            resize: none;
+        }
+        textarea::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .btn {
+            padding: 12px 20px;
+            background: #6a11cb;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.3s ease-in-out;
+        }
+        .btn:hover {
+            background: #2575fc;
+        }
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(29, 6, 48, 0.605);
+            white-space: nowrap;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid rgb(9, 1, 49);
+            text-align: left;
+        }
+        th {
+            background: rgba(29, 6, 48, 0.8);
+            font-weight: bold;
+        }
+        tr:hover {
+            background: rgba(13, 39, 73, 0.508);
+        }
+        .home-link {
+            display: block;
+            margin-top: 20px;
+            color: #00c6ff;
+            text-decoration: none;
+        }
+        .home-link:hover {
+            color: #fff;
+        }
+        .loader {
+            display: none;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Match Resumes to Job Description</h1>
+        <textarea id="job-description" placeholder="Enter job description" rows="4"></textarea>
+        <br>
+        <button class="btn" onclick="matchResumes()">Find Best Matches</button>
+        <p class="loader" id="loading">Loading matches...</p>
+
+        <div class="table-container">
+            <table id="matched-resumes-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Match Score</th>
+                    </tr>
+                </thead>
+                <tbody id="matched-resumes-body"></tbody>
+            </table>
+        </div>
+        <br>
+        <a href="/" class="home-link">Back to Home</a>
+    </div>
+
+    <script>
+        function matchResumes() {
+    const jobDescription = document.getElementById('job-description').value;
+    const loadingText = document.getElementById('loading');
+    const tableBody = document.getElementById('matched-resumes-body');
+
+    if (!jobDescription.trim()) {
+        alert("Please enter a job description.");
+        return;
+    }
+
+    loadingText.style.display = "block"; // Show loading text
+    tableBody.innerHTML = ""; // Clear previous results
+
+    fetch('/match_resumes', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ job_description: jobDescription })
+    })
+    .then(response => response.json())
+    .then(data => {
+        loadingText.style.display = "none"; // Hide loading text
+
+        if (data.error) {
+            alert("Error: " + data.error);
+            return;
+        }
+
+        if (data.length === 0) {
+            tableBody.innerHTML = "<tr><td colspan='4' style='text-align:center;'>No matches found.</td></tr>";
+            return;
+        }
+
+        data.forEach((resume, index) => {
+            let row = `<tr>
+                <td>${index + 1}</td>
+                <td>${resume.name || "N/A"}</td>
+                <td>${resume.email || "N/A"}</td>
+                <td>${resume.match_score ? resume.match_score.toFixed(2) + "%" : "N/A"}</td>
+            </tr>`;
+            tableBody.innerHTML += row;
+        });
+    })
+    .catch(error => {
+        loadingText.style.display = "none"; // Hide loading text
+        console.error('Error:', error);
+        alert("An error occurred while fetching matched resumes.");
+    });
+}
+    </script>
+</body>
+</html>

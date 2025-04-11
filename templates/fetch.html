@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Resumes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a0b2e, #2d0e5e);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(29, 6, 48, 0.605);
+            white-space: nowrap;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid rgb(9, 1, 49);
+            text-align: left;
+        }
+        th {
+            background: rgba(29, 6, 48, 0.605);
+            font-weight: bold;
+        }
+        tr:hover {
+            background: rgba(13, 39, 73, 0.508);
+        }
+        .btn {
+            padding: 12px 20px;
+            background: #6a11cb;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: #2575fc;
+        }
+        input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 250px;
+            margin-right: 10px;
+        }
+        .home-link {
+            display: block;
+            margin-top: 20px;
+            color: #00c6ff;
+            text-decoration: none;
+        }
+        .home-link:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fetch Resumes</h1>
+        <h2>Fetch All Resumes</h2>
+        <button class="btn" onclick="fetchAllResumes()">Get All Resumes</button>
+        <div class="table-container">
+            <table id="all-resumes-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>LinkedIn</th>
+                        <th>GitHub</th>
+                        <th>Degree</th>
+                        <th>Programming Languages</th>
+                        <th>ML Tools</th>
+                        <th>Dev Tools</th>
+                        <th>Courseworks</th>
+                        <th>Soft Skills</th>
+                    </tr>
+                </thead>
+                <tbody id="all-resumes-body"></tbody>
+            </table>
+        </div>
+        <h2>Fetch Resume by Email</h2>
+        <input type="email" id="email" placeholder="Enter email" required>
+        <button class="btn" onclick="fetchResume()">Get Resume</button>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>LinkedIn</th>
+                        <th>GitHub</th>
+                        <th>Degree</th>
+                        <th>Programming Languages</th>
+                        <th>ML Tools</th>
+                        <th>Dev Tools</th>
+                        <th>Courseworks</th>
+                        <th>Soft Skills</th>
+                    </tr>
+                </thead>
+                <tbody id="resume-body"></tbody>
+            </table>
+        </div>
+        <br>
+        <a href="/" class="home-link">Back to Home</a>
+    </div>
+
+    <script>
+        function fetchAllResumes() {
+            fetch('/resumes')
+                .then(response => response.json())
+                .then(data => {
+                    console.log("Fetched Data:", data);
+                    const tableBody = document.getElementById('all-resumes-body');
+                    tableBody.innerHTML = "";
+                    data.forEach(resume => {
+                        let row = `<tr>
+                            <td>${resume.id || "N/A"}</td>
+                            <td>${resume.name || "N/A"}</td>
+                            <td>${resume.email || "N/A"}</td>
+                            <td>${resume.phone || "N/A"}</td>
+                            <td><a href="${resume.linkedin || '#'}" target="_blank">LinkedIn</a></td>
+                            <td><a href="${resume.github || '#'}" target="_blank">GitHub</a></td>
+                            <td>${resume.degree || "N/A"}</td>
+                            <td>${resume.programming_languages || "N/A"}</td>
+                            <td>${resume.ml_tools || "N/A"}</td>
+                            <td>${resume.dev_tools || "N/A"}</td>
+                            <td>${resume.courseworks || "N/A"}</td>
+                            <td>${resume.soft_skills || "N/A"}</td>
+                        </tr>`;
+                        tableBody.innerHTML += row;
+                    });
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+        function fetchResume() {
+            const email = document.getElementById('email').value;
+            fetch(`/resume?email=${email}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log("Fetched Resume:", data);
+                    const tableBody = document.getElementById('resume-body');
+                    tableBody.innerHTML = "";
+
+                    let row = `<tr>
+                        <td>${data.id || "N/A"}</td>
+                        <td>${data.name || "N/A"}</td>
+                        <td>${data.email || "N/A"}</td>
+                        <td>${data.phone || "N/A"}</td>
+                        <td><a href="${data.linkedin || '#'}" target="_blank">LinkedIn</a></td>
+                        <td><a href="${data.github || '#'}" target="_blank">GitHub</a></td>
+                        <td>${data.degree || "N/A"}</td>
+                        <td>${data.programming_languages || "N/A"}</td>
+                        <td>${data.ml_tools || "N/A"}</td>
+                        <td>${data.dev_tools || "N/A"}</td>
+                        <td>${data.courseworks || "N/A"}</td>
+                        <td>${data.soft_skills || "N/A"}</td>
+                    </tr>`;
+                    tableBody.innerHTML += row;
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>
